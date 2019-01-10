@@ -18,7 +18,7 @@ namespace CSharpOddOrEven
 
             if (BigInteger.TryParse(numberQueryValue, out BigInteger number))
             {
-                return new OkObjectResult(number % 2 == 0 ? "Einar" : "Oddur");
+                return new OkObjectResult(number % 2 == 0 ? "Einars" : "Odds");
             }
             else
             {

@@ -22,7 +22,7 @@ namespace CSharpOddOrEven.Tests
             var response = OddOrEven.Run(request, logger);
 
             Assert.IsType<OkObjectResult>(response);
-            Assert.Equal("Einar", ((OkObjectResult)response).Value as string);
+            Assert.Equal("Einars", ((OkObjectResult)response).Value as string);
         }
 
         [Theory]
@@ -33,7 +33,7 @@ namespace CSharpOddOrEven.Tests
             var response = OddOrEven.Run(request, logger);
 
             Assert.IsType<OkObjectResult>(response);
-            Assert.Equal("Oddur", ((OkObjectResult)response).Value as string);
+            Assert.Equal("Odds", ((OkObjectResult)response).Value as string);
         }
 
         [Fact]
